@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoChat Logo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 24px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #007AFF 0%, #007AFF80 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .logo-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo-item h3 {
+            color: #666;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .logo-preview {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .logo-preview:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 122, 255, 0.2);
+        }
+        
+        .logo-preview svg {
+            display: block;
+        }
+        
+        .size-large { width: 300px; height: 300px; }
+        .size-medium { width: 180px; height: 180px; }
+        .size-small { width: 64px; height: 64px; }
+        
+        .download-section {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 2px solid #e9ecef;
+        }
+        
+        .download-section h2 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        
+        .download-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .download-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #007AFF 0%, #0051D5 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .download-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 122, 255, 0.4);
+        }
+        
+        .color-info {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        
+        .color-info h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .color-swatches {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .color-swatch {
+            text-align: center;
+        }
+        
+        .color-box {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .color-name {
+            font-size: 14px;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .color-code {
+            font-size: 12px;
+            color: #999;
+            font-family: 'Monaco', 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ NeoChat Logo</h1>
+        
+        <div class="logo-grid">
+            <div class="logo-item">
+                <h3>Large (512×512)</h3>
+                <div class="logo-preview size-large">
+                    <svg width="300" height="300" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="bgGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#007AFF;stop-opacity:0.2" />
+                                <stop offset="100%" style="stop-color:#007AFF;stop-opacity:0.1" />
+                            </linearGradient>
+                            <linearGradient id="sparklesGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#007AFF;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#007AFF;stop-opacity:0.7" />
+                                <stop offset="100%" style="stop-color:#007AFF;stop-opacity:0.8" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="256" cy="256" r="230" fill="url(#bgGradient1)"/>
+                        <g transform="translate(256, 256)">
+                            <path d="M 0,-80 L -8,-65 L 8,-65 Z" fill="url(#sparklesGradient1)" opacity="0.9"/>
+                            <path d="M 0,80 L -8,65 L 8,65 Z" fill="url(#sparklesGradient1)" opacity="0.9"/>
+                            <path d="M -80,0 L -65,-8 L -65,8 Z" fill="url(#sparklesGradient1)" opacity="0.9"/>
+                            <path d="M 80,0 L 65,-8 L 65,8 Z" fill="url(#sparklesGradient1)" opacity="0.9"/>
+                            <path d="M -56,-56 L -48,-44 L -44,-48 Z" fill="url(#sparklesGradient1)" opacity="0.85"/>
+                            <path d="M 56,-56 L 48,-44 L 44,-48 Z" fill="url(#sparklesGradient1)" opacity="0.85"/>
+                            <path d="M -56,56 L -48,44 L -44,48 Z" fill="url(#sparklesGradient1)" opacity="0.85"/>
+                            <path d="M 56,56 L 48,44 L 44,48 Z" fill="url(#sparklesGradient1)" opacity="0.85"/>
+                            <circle cx="0" cy="0" r="12" fill="url(#sparklesGradient1)"/>
+                        </g>
+                        <g transform="translate(256, 256)">
+                            <g transform="translate(0, -160)">
+                                <path d="M 0,-20 L -4,-12 L 4,-12 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 0,20 L -4,12 L 4,12 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M -20,0 L -12,-4 L -12,4 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 20,0 L 12,-4 L 12,4 Z" fill="#007AFF" opacity="0.6"/>
+                                <circle cx="0" cy="0" r="4" fill="#007AFF" opacity="0.6"/>
+                            </g>
+                            <g transform="translate(-140, 80)">
+                                <path d="M 0,-20 L -4,-12 L 4,-12 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 0,20 L -4,12 L 4,12 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M -20,0 L -12,-4 L -12,4 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 20,0 L 12,-4 L 12,4 Z" fill="#007AFF" opacity="0.6"/>
+                                <circle cx="0" cy="0" r="4" fill="#007AFF" opacity="0.6"/>
+                            </g>
+                            <g transform="translate(140, 80)">
+                                <path d="M 0,-20 L -4,-12 L 4,-12 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 0,20 L -4,12 L 4,12 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M -20,0 L -12,-4 L -12,4 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 20,0 L 12,-4 L 12,4 Z" fill="#007AFF" opacity="0.6"/>
+                                <circle cx="0" cy="0" r="4" fill="#007AFF" opacity="0.6"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="logo-item">
+                <h3>Medium (180×180)</h3>
+                <div class="logo-preview size-medium">
+                    <svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#007AFF;stop-opacity:0.2" />
+                                <stop offset="100%" style="stop-color:#007AFF;stop-opacity:0.1" />
+                            </linearGradient>
+                            <linearGradient id="sparklesGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#007AFF;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#007AFF;stop-opacity:0.7" />
+                                <stop offset="100%" style="stop-color:#007AFF;stop-opacity:0.8" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="90" cy="90" r="85" fill="url(#bgGradient2)"/>
+                        <g transform="translate(90, 90)">
+                            <path d="M 0,-50 L -5,-40 L 5,-40 Z" fill="url(#sparklesGradient2)" opacity="0.9"/>
+                            <path d="M 0,50 L -5,40 L 5,40 Z" fill="url(#sparklesGradient2)" opacity="0.9"/>
+                            <path d="M -50,0 L -40,-5 L -40,5 Z" fill="url(#sparklesGradient2)" opacity="0.9"/>
+                            <path d="M 50,0 L 40,-5 L 40,5 Z" fill="url(#sparklesGradient2)" opacity="0.9"/>
+                            <path d="M -35,-35 L -30,-27 L -27,-30 Z" fill="url(#sparklesGradient2)" opacity="0.85"/>
+                            <path d="M 35,-35 L 30,-27 L 27,-30 Z" fill="url(#sparklesGradient2)" opacity="0.85"/>
+                            <path d="M -35,35 L -30,27 L -27,30 Z" fill="url(#sparklesGradient2)" opacity="0.85"/>
+                            <path d="M 35,35 L 30,27 L 27,30 Z" fill="url(#sparklesGradient2)" opacity="0.85"/>
+                            <circle cx="0" cy="0" r="8" fill="url(#sparklesGradient2)"/>
+                        </g>
+                        <g transform="translate(90, 90)">
+                            <g transform="translate(0, -55)">
+                                <path d="M 0,-12 L -3,-7 L 3,-7 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 0,12 L -3,7 L 3,7 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M -12,0 L -7,-3 L -7,3 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 12,0 L 7,-3 L 7,3 Z" fill="#007AFF" opacity="0.6"/>
+                                <circle cx="0" cy="0" r="2.5" fill="#007AFF" opacity="0.6"/>
+                            </g>
+                            <g transform="translate(-48, 28)">
+                                <path d="M 0,-12 L -3,-7 L 3,-7 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 0,12 L -3,7 L 3,7 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M -12,0 L -7,-3 L -7,3 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 12,0 L 7,-3 L 7,3 Z" fill="#007AFF" opacity="0.6"/>
+                                <circle cx="0" cy="0" r="2.5" fill="#007AFF" opacity="0.6"/>
+                            </g>
+                            <g transform="translate(48, 28)">
+                                <path d="M 0,-12 L -3,-7 L 3,-7 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 0,12 L -3,7 L 3,7 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M -12,0 L -7,-3 L -7,3 Z" fill="#007AFF" opacity="0.6"/>
+                                <path d="M 12,0 L 7,-3 L 7,3 Z" fill="#007AFF" opacity="0.6"/>
+                                <circle cx="0" cy="0" r="2.5" fill="#007AFF" opacity="0.6"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="logo-item">
+                <h3>Favicon (32×32)</h3>
+                <div class="logo-preview size-small">
+                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#007AFF;stop-opacity:0.2" />
+                                <stop offset="100%" style="stop-color:#007AFF;stop-opacity:0.1" />
+                            </linearGradient>
+                            <linearGradient id="sparkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#007AFF" />
+                                <stop offset="100%" style="stop-color:#007AFF;stop-opacity:0.7" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="16" cy="16" r="14" fill="url(#bgGrad)"/>
+                        <g transform="translate(16, 16)">
+                            <path d="M 0,-9 L -1.5,-7 L 1.5,-7 Z" fill="url(#sparkGrad)"/>
+                            <path d="M 0,9 L -1.5,7 L 1.5,7 Z" fill="url(#sparkGrad)"/>
+                            <path d="M -9,0 L -7,-1.5 L -7,1.5 Z" fill="url(#sparkGrad)"/>
+                            <path d="M 9,0 L 7,-1.5 L 7,1.5 Z" fill="url(#sparkGrad)"/>
+                            <circle cx="0" cy="0" r="2" fill="url(#sparkGrad)"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <div class="download-section">
+            <h2>📥 Скачать логотипы</h2>
+            <div class="download-links">
+                <a href="logo.svg" download class="download-link">Logo SVG (512×512)</a>
+                <a href="logo-icon.svg" download class="download-link">Icon SVG (180×180)</a>
+                <a href="favicon.svg" download class="download-link">Favicon SVG (32×32)</a>
+            </div>
+        </div>
+        
+        <div class="color-info">
+            <h3>🎨 Цветовая палитра</h3>
+            <div class="color-swatches">
+                <div class="color-swatch">
+                    <div class="color-box" style="background: #007AFF;"></div>
+                    <div class="color-name">Primary Blue</div>
+                    <div class="color-code">#007AFF</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background: linear-gradient(135deg, #007AFF 0%, #007AFF80 100%);"></div>
+                    <div class="color-name">Gradient</div>
+                    <div class="color-code">#007AFF → 80%</div>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background: rgba(0, 122, 255, 0.2);"></div>
+                    <div class="color-name">Background</div>
+                    <div class="color-code">20% opacity</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
